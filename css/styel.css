@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background: #0093E9 linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-task {
+    width: 100%;
+    max-width: 500px;
+    background-color: #FBFBFB;
+    margin-top: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+ .add-task form {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #0093E9;
+}
+.add-task form .input-group{
+    width: 100%;
+    font-size: 16px;
+    background-color: #FBFBFB;
+    letter-spacing: 1px;
+}
+.add-task form button {
+    padding: 3px 18px;
+    background-color: #0093E9;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.add-task .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+}
+.add-task .filters .filter-tab {
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    background-color: #FBFBFB;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.add-task .filters .filter-tab-active {
+    border-bottom: 2px solid #0093E9;
+    color: #0093E9;
+}
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-result {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px #2222;
+}
+/* @media */
+
+@media (max-width: 320px) {
+    .add-task {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .add-task form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-task form .input-group {
+        width: 100%;
+    }
+
+    .add-task form button {
+        width: 100%;
+    }
+
+    .add-task .filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+

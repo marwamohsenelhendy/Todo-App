@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Jomhuria&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;700&family=Roboto&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href="css/styel.css">
+</head>
+<body>
+    <div class="todo-container">
+      <div class="add-task">
+          <form>
+              <input type="text" placeholder="Enter new task here" class="input-group" id="task-input">
+              <button id="create-task-btn">create</button>
+          </form>
+          <div class="filters">
+              <button class="filter-tab filter-tab-active" data-filter="All">All</button>
+              <button class="filter-tab" data-filter="todo">Todo</button>
+              <button class="filter-tab" data-filter="completed">Completed</button>
+          </div>
+          <div class="results" id="task-results">
+            <div class="info">
+              <p></p>
+              <span></span>
+            </div>
+            <div class="tasak-completed"></div>
+          </div>
+          <div class="task-result">
+            <div class="info">
+              <p></p>
+              <span></span>
+            </div>
+            <div class="tasak-completed"></div>
+          </div>
+      </div>
+  </div>
+
+</body>
+<script src="js/app.js"></script>
+</html>
